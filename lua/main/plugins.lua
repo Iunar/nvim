@@ -15,6 +15,13 @@ require("lazy").setup({
 	    },
 	    init = function()
 		vim.cmd("colorscheme catppuccin-mocha")
+		-- Transparent background
+		vim.cmd [[
+		    highlight Normal guibg=none
+		    highlight NonText guibg=none
+		    highlight Normal ctermbg=none
+		    highlight NonText ctermbg=none
+		]]
 	    end
 	},
 	{ -- Plenary
